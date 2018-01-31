@@ -1,0 +1,10 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.half{
+  width: 48%;
+  display: inline-block;
+  float: left;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Dedicated Worker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+    <h1>Generate Random numbers in Main Thread or Dedicated Worker and See the difference</h1>
+    <section class="half">
+        <h1>Main Thread</h1>
+        <input type="number" value="1000" id="mainthreadinput">
+        <button onclick="generate('mainthread')">Generate</button>
+        <h2 id="mainthreadarea"></h2>
+    </section>
+    <section class="half">
+        <h1>Dedicated Worker</h1>
+        <input type="number" value="1000" id="dedicatedthreadinput">
+        <button onclick="generate('worker')">Generate</button>
+        <h2 id="dedicatedthreadarea"></h2>
+    </section>
+    <script type="text/javascript" src="javascripts/handleworker.js"></script>
+</body>
+</html>
